@@ -14,7 +14,7 @@ object Env {
 
 
 object EnvVal {
-  val weatherUrl = sys.env.get(Env.weatherUrl)
+  val weatherUrl = sys.env.get(Env.weatherUrl).map(_.replaceAll("\\\\", ""))
   val mqttParams = MqttParams.byEnv(Env.mqtt)
   val initialDelay = Try(sys.env(Env.initialdelaySec).toInt.seconds).toOption
   val interval = Try(sys.env(Env.intervalSec).toInt.seconds).toOption

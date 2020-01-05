@@ -9,3 +9,6 @@ libraryDependencies += "com.lightbend.akka" %% "akka-stream-alpakka-mqtt" % "1.1
 libraryDependencies += "com.typesafe.akka" %% "akka-http"   % "10.1.11"
 libraryDependencies += "com.typesafe.akka" %% "akka-stream" % "2.5.26"
 libraryDependencies += "com.typesafe.akka" %% "akka-http-spray-json" % "10.1.11"
+
+libraryDependencies += "com.typesafe.scala-logging" %% "scala-logging" % "3.9.2"
+libraryDependencies += "ch.qos.logback" % "logback-classic" % "1.2.3"
